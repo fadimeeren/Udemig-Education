@@ -105,6 +105,100 @@ nav.active a:hover {
   scale: 0.9;
 }
 
+#home {
+  height: 100vh;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/group.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  position: relative;
+}
+#home .home-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+#home .home-text h5 {
+  color: #ffa343;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 10px;
+}
+#home .home-text h1 {
+  font-size: 6rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+@media (max-width: 1000px) {
+  #home .home-text h1 {
+    font-size: 3rem;
+  }
+}
+#home .home-text p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6705882353);
+  margin-bottom: 40px;
+}
+#home .home-text button {
+  padding: 13px 40px;
+  display: inline-block;
+  background-color: #ffa343;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+#home .home-text button:hover {
+  border: 2px solid white;
+  background-color: transparent;
+  color: #ffffff;
+  transform: translateX(10px);
+}
+
+.educations-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  text-align: center;
+  align-items: center;
+  padding: 70px 17% 60px;
+}
+.educations-content .educations-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 200px;
+}
+.educations-content .educations-card-image {
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.educations-content .educations-card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+.educations-content .educations-card-image img:hover {
+  scale: 1.2;
+}
+.educations-content .educations-card h4 {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.educations-content .educations-card h4:hover {
+  color: #ffa343;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #000000;
@@ -121,6 +215,6 @@ a {
   justify-content: space-between;
 }
 
-.transition, header nav a, header .right-area a {
+.transition, header nav a, header .right-area a, #home .home-text button, .educations-content .educations-card-image img, .educations-content .educations-card h4 {
   transition: all 0.5s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
